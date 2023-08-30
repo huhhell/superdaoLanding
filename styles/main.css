@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap");
+._container {
+  font-family: "Geologica", sans-serif;
+  color: #fff;
+  background-color: #10151A;
+}
+
+.header {
+  background-image: url(../img/main/bgi.jpeg);
+}
+
+.nav {
+  height: 128px;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+@media (max-width: 960px) {
+  .nav {
+    max-width: 95%;
+    height: 108px;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    max-width: 368px;
+  }
+}
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.nav__logo-img {
+  max-width: 60px;
+  height: auto;
+}
+.nav__logo-name {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 200%;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 960px) {
+  .nav__logo-name {
+    font-size: 22.5px;
+  }
+}
+@media (max-width: 768px) {
+  .nav__logo-name {
+    font-size: 17px;
+  }
+}
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+@media (max-width: 768px) {
+  .nav__menu {
+    display: none;
+  }
+}
+@media (max-width: 960px) {
+  .nav__menu {
+    gap: 40px;
+  }
+}
+.nav__menu-item {
+  font-size: 18px;
+  line-height: 200%;
+}
+@media (max-width: 960px) {
+  .nav__menu-item {
+    font-size: 16px;
+  }
+}
+.nav__menu-item-button {
+  width: 128px;
+  height: 40px;
+  background-color: #262E37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+@media (max-width: 960px) {
+  .nav__menu-item-button {
+    width: 120px;
+    height: 35px;
+  }
+}
+.nav__menu-item-button-img {
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 960px) {
+  .nav__menu-item-button-img {
+    width: 20px;
+    height: 20px;
+  }
+}
+.nav__menu-item-button-text {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 175%;
+}
+@media (max-width: 960px) {
+  .nav__menu-item-button-text {
+    font-size: 15px;
+  }
+}
+.nav__menu-icon {
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 768px) {
+  .nav__menu-icon {
+    display: block;
+  }
+}
+
+.main {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 10% 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 960px) {
+  .main {
+    max-width: 655px;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    max-width: 368px;
+  }
+}
+.main__title {
+  max-width: 910px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 111%;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 960px) {
+  .main__title {
+    font-size: 52px;
+  }
+}
+@media (max-width: 768px) {
+  .main__title {
+    max-width: 85%;
+    line-height: 130%;
+    font-size: 32px;
+    margin: 0 auto 16px auto;
+  }
+}
+.main__title-underline {
+  position: relative;
+}
+.main__title-underline-text {
+  position: relative;
+  display: inline-block;
+  z-index: 3;
+}
+.main__title-underline-img {
+  max-width: 223px;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(55%, 0);
+}
+@media (max-width: 960px) {
+  .main__title-underline-img {
+    max-width: 162px;
+  }
+}
+@media (max-width: 768px) {
+  .main__title-underline-img {
+    max-width: 101px;
+  }
+}
+.main__text {
+  max-width: 650px;
+  margin: 0 auto 80px auto;
+  font-size: 24px;
+  line-height: 166%;
+  text-align: center;
+  opacity: 0.8;
+}
+@media (max-width: 960px) {
+  .main__text {
+    max-width: 540px;
+    font-size: 20px;
+    margin: 0 auto 50px auto;
+  }
+}
+@media (max-width: 768px) {
+  .main__text {
+    max-width: 250px;
+    font-size: 15px;
+    margin: 0 auto 32px auto;
+  }
+}
+.main__button {
+  padding: 16px 40px;
+  background: linear-gradient(180deg, #FFD600 0%, #FFB800 100%);
+  box-shadow: 0 9px 44px 0 rgba(255, 214, 0, 0.19);
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 180%;
+}
+@media (max-width: 960px) {
+  .main__button {
+    padding: 12px 36px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .main__button {
+    padding: 8px 28px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
