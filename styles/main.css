@@ -1045,4 +1045,120 @@ main {
   background: rgba(255, 255, 255, 0.15);
 }
 
+.learn__title {
+  position: relative;
+  margin-bottom: 50px;
+}
+@media (max-width: 960px) {
+  .learn__title {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .learn__title {
+    margin-bottom: 30px;
+  }
+}
+.learn__title-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  text-shadow: 0 2px 25px rgba(0, 0, 0, 0.6);
+  font-size: 48px;
+  line-height: 190%;
+}
+@media (max-width: 960px) {
+  .learn__title-text {
+    font-size: 40px;
+    line-height: 130%;
+  }
+}
+@media (max-width: 768px) {
+  .learn__title-text {
+    font-size: 24px;
+    line-height: 110%;
+  }
+}
+.learn__title-underline {
+  width: 300px;
+  height: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+@media (max-width: 960px) {
+  .learn__title-underline {
+    max-width: 280px;
+    height: 21px;
+    transform: translate(-50%, 0);
+  }
+}
+@media (max-width: 768px) {
+  .learn__title-underline {
+    max-width: 165px;
+    height: 12px;
+    transform: translate(-50%, 25%);
+  }
+}
+.learn__items {
+  display: flex;
+  gap: 44px;
+}
+@media (max-width: 960px) {
+  .learn__items {
+    gap: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .learn__items {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.learn__item {
+  flex: 0 1 33%;
+  background-color: #1B2A40;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.learn__item-img {
+  width: 100%;
+}
+.learn__item-info {
+  padding: 20px 28px;
+}
+@media (max-width: 960px) {
+  .learn__item-info {
+    padding: 16px 20px;
+  }
+}
+.learn__item-title {
+  color: #FFD600;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 240%;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 5px;
+}
+@media (max-width: 960px) {
+  .learn__item-title {
+    line-height: 210%;
+  }
+}
+.learn__item-text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 160%;
+}
+@media (max-width: 960px) {
+  .learn__item-text {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
