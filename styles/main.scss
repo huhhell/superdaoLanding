@@ -244,18 +244,22 @@
 }
 
 .menu {
-  width: 320px;
+  display: none;
+  width: 368px;
   background-color: #222930;
   position: absolute;
+  z-index: 100;
   top: 0;
-  right: 0;
+  right: 50%;
+  transform: translate(50%, 0);
   padding: 20px;
+
 
   &__close {
     display: block;
     position: relative;
     top: 0;
-    left: 266px;
+    left: 304px;
   }
 
   &__main {
