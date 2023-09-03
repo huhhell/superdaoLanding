@@ -1009,6 +1009,11 @@ main {
 }
 
 .learn {
+  margin-bottom: 160px;
+
+  @media (max-width: 960px) {
+    margin-bottom: 80px;
+  }
 
   &__title {
     position: relative;
@@ -1119,6 +1124,112 @@ main {
       @media (max-width: 960px) {
         font-size: 16px;
         line-height: 150%;
+      }
+    }
+  }
+}
+
+.backed {
+  margin-bottom: 160px;
+  
+  @media (max-width: 960px) {
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 45px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 33px;
+    }
+
+    &-text {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      text-shadow: 0 2px 25px rgba(0, 0, 0, 0.60);
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 190%;
+
+      @media (max-width: 960px) {
+        font-size: 40px;
+        line-height: 130%;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 24px;
+        line-height: 116%;
+      }
+    }
+    &-underline {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-45%, -50%);
+
+      @media (max-width: 960px) {
+        transform: translate(-45%, 10%);
+        width: 260px;
+        height: 23px;
+      }
+
+      @media (max-width: 768px) {
+        width: 163px;
+        height: 14px;
+        transform: translate(-45%, 10%);
+      }
+    }
+  }
+
+  &__companies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+    margin-bottom: 36px;
+    flex-wrap: wrap;
+    
+    @media (max-width: 960px) {
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    &-item {
+      height: 72px;
+      width: auto;
+      
+      @media (max-width: 1140px) {
+        height: 50px;
+      }
+    }
+  }
+
+  &__clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+
+    @media (max-width: 960px) {
+      gap: 20px;
+    }
+
+    &-item {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 170%;
+      padding: 8px 24px;
+      text-align: center;
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      border-radius: 12px;
+
+      @media (max-width: 960px) {
+        font-size: 14px;
       }
     }
   }
