@@ -7,6 +7,7 @@
 }
 
 .header {
+  position: relative;
   background-image: url(../img/main/bgi.jpeg);
   padding: 0 20px;
 }
@@ -240,6 +241,95 @@
     }
   }
 
+}
+
+.menu {
+  width: 320px;
+  background-color: #222930;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+
+  &__close {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 266px;
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__logo {
+    height: 38px;
+    width: auto;
+    margin-bottom: 14px;
+  }
+
+  &__company {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 200%;
+    letter-spacing: 0.4px;
+    margin-bottom: 40px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    margin-bottom: 32px;
+
+    &-item {
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.10);
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      border-radius: 12px;
+      text-align: left;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 213%;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  &__socials-item {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.10);
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-text {
+      font-size: 15px;
+      color: #ffffff;
+      font-weight: 600;
+      line-height: 210%;
+    }
+
+    &-img {
+      width: 24px;
+      height: 24px;
+    }
+  }
 }
 
 main {
@@ -1131,7 +1221,7 @@ main {
 
 .backed {
   margin-bottom: 160px;
-  
+
   @media (max-width: 960px) {
     margin-bottom: 80px;
   }
@@ -1163,6 +1253,7 @@ main {
         line-height: 116%;
       }
     }
+
     &-underline {
       position: absolute;
       bottom: 0;
@@ -1190,7 +1281,7 @@ main {
     gap: 4%;
     margin-bottom: 36px;
     flex-wrap: wrap;
-    
+
     @media (max-width: 960px) {
       gap: 30px;
       margin-bottom: 30px;
@@ -1199,7 +1290,7 @@ main {
     &-item {
       height: 72px;
       width: auto;
-      
+
       @media (max-width: 1140px) {
         height: 50px;
       }
@@ -1239,7 +1330,7 @@ main {
   padding: 32px 20px;
   background: linear-gradient(180deg, #FFD600 0%, #FFC700 100%);
   color: #000000;
-  
+
   &__container {
     max-width: 1140px;
     margin: 0 auto;
@@ -1247,11 +1338,11 @@ main {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+
     @media (max-width: 960px) {
       max-width: 736px;
     }
-    
+
     @media (max-width: 768px) {
       max-width: 368px;
       flex-direction: column;
@@ -1262,7 +1353,7 @@ main {
   &__logo {
     width: 56px;
     height: auto;
-    
+
     @media (max-width: 960px) {
       width: 48px;
     }
